@@ -1,14 +1,30 @@
 # Image credits
 
-Photographs sourced from Wikimedia Commons.
+All photographs from Wikimedia Commons, each visually checked against the
+product it is used for before shipping.
 
-| File | Original | Licence | Author |
+| File | Product | Licence | Source |
 |---|---|---|---|
-| `hatdua-1.jpg` | [Roasted watermelon seeds 1.jpg](https://commons.wikimedia.org/wiki/File%3ARoasted%20watermelon%20seeds%201.jpg) | CC0 | Mx. Granger |
-| `hatdua-2.jpg` | [Roasted watermelon seeds 2.jpg](https://commons.wikimedia.org/wiki/File%3ARoasted%20watermelon%20seeds%202.jpg) | CC0 | Mx. Granger |
-| `hatbi.jpg` | [Pepitas de calabaza tostadas.jpg](https://commons.wikimedia.org/wiki/File%3APepitas%20de%20calabaza%20tostadas.jpg) | CC BY-SA 4.0 | E4024 |
-| `hopqua.jpg` | [Liz Gastronomie Mooncake Gift Box 20160915.jpg](https://commons.wikimedia.org/wiki/File%3ALiz%20Gastronomie%20Mooncake%20Gift%20Box%2020160915.jpg) | CC0 | 玄史生 |
+| `hatdua.jpg`, `hatdua-b.jpg`, `hatdua-c.jpg` | hạt dưa đỏ (b and c are crops of the same photo) | **CC0** | [Licorice red watermelon seeds](https://commons.wikimedia.org/wiki/File:Licorice_red_watermelon_seeds.jpg) |
+| `hatbi.jpg` | hạt bí, whole in shell | CC BY-SA 4.0 | [Pumpkin seed. img 011](https://commons.wikimedia.org/wiki/File:Pumpkin_seed._img_011.jpg) |
+| `omega3.jpg` | dầu cá Omega-3 softgels | **CC0** | [Fish Oil Capsules](https://commons.wikimedia.org/wiki/File:Fish_Oil_Capsules.jpg) |
+| `d3k2.jpg` | D3/K2 softgels | **CC0** | [Softgels](https://commons.wikimedia.org/wiki/File:Softgels.jpg) |
+| `multivitamin.jpg` | vitamin tablets | CC BY-SA 4.0 | [Generic medicine pills](https://commons.wikimedia.org/wiki/File:A_collection_of_generic_medicine_pills_on_a_white_background.jpg) |
 
-These are library photographs of the product category, not of
-Hiển Hòa's own stock. Replace with real product photography before
-any paid advertising.
+## Rejected, and why
+
+Checking each image before use caught four that would have shipped wrong:
+
+- **"Roasted watermelon seeds"** — pale hulled kernels, not red-shelled hạt dưa.
+- **Turkish roasting machine** — a machine, with **ÇİTLEKCİ** branding on it.
+- **Boots "BODY BUILD" protein tub** — a competitor's branding plus a ruler.
+- **Pharmacy shelf** — Sunkist, MultiSure and Webber packaging throughout.
+- **"Guazi bins"** — sunflower seeds with Chinese shop signage, not hạt dưa.
+
+No unbranded whey protein photo exists on Commons, so that card ships without
+one rather than with the wrong product.
+
+## Still to do
+
+These are library photographs of the product category, not Hiển Hòa's own
+stock. Shoot real product photography before any paid advertising.
