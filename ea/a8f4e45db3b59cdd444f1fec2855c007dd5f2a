@@ -1,0 +1,23 @@
+index.html
+  s_b6590482fc13dc::t_989746c965bc81 7,241,502
+img/ATTRIBUTION.md
+  s_b6590482fc13dc::t_989746c965bc81 13
+README.md
+  s_b6590482fc13dc::t_989746c965bc81 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "eaa8f4e45db3b59cdd444f1fec2855c007dd5f2a",
+  "prompts": {},
+  "sessions": {
+    "s_b6590482fc13dc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4bccff0-af0d-41ee-a6d3-0a19575667ad",
+        "model": "claude-opus-5"
+      },
+      "human_author": "anh nguyen <anh.nqqq@icloud.com>"
+    }
+  }
+}
