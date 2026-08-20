@@ -10,5 +10,5 @@ Photographs sourced from Wikimedia Commons.
 | `hopqua.jpg` | [Liz Gastronomie Mooncake Gift Box 20160915.jpg](https://commons.wikimedia.org/wiki/File%3ALiz%20Gastronomie%20Mooncake%20Gift%20Box%2020160915.jpg) | CC0 | 玄史生 |
 
 These are library photographs of the product category, not of
-Hiền Hòa's own stock. Replace with real product photography before
+Hiển Hòa's own stock. Replace with real product photography before
 any paid advertising.

@@ -1,6 +1,6 @@
 # hienhoa.com
 
-Landing site for Hiền Hòa: agricultural products (hạt dưa / watermelon seeds,
+Landing site for Hiển Hòa: agricultural products (hạt dưa / watermelon seeds,
 hạt bí) and AI software solutions.
 
 Two live campaigns:
