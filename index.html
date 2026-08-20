@@ -136,6 +136,13 @@
              box-shadow: 0 18px 42px rgba(138,101,8,.13); }
   .p .shot { aspect-ratio: 4/3; background: var(--cream2); overflow: hidden;
              border-bottom: 1px solid var(--line); }
+  .shot.await { display: grid; place-items: center; text-align: center;
+                background: repeating-linear-gradient(135deg,
+                  var(--cream2) 0 12px, #fbf0da 12px 24px); }
+  .shot.await span { color: var(--muted); font-size: 13px; font-weight: 600;
+                     padding: 18px; line-height: 1.5; }
+  .shot.await em { display: block; font-style: normal; font-weight: 400;
+                   font-size: 11.5px; opacity: .8; margin-top: 5px; }
   .shot img { width: 100%; height: 100%; object-fit: cover;
               transition: transform .5s cubic-bezier(.2,.7,.2,1); }
   .p:hover .shot img { transform: scale(1.05); }
@@ -367,10 +374,15 @@
       <a class="btn sm" href="#lienhe">Nhận catalogue</a>
     </div>
 
+    <div class="note" style="margin:0 0 22px">
+      <b>Ảnh hộp quà:</b> mẫu hộp là bao bì riêng của Hiển Hòa, nên cần ảnh
+      chụp thật. Gửi ảnh hộp qua Zalo và chúng tôi cập nhật lên trang trong ngày.
+    </div>
+
     <div class="grid">
       <article class="p">
         <span class="badge g">Bán chạy</span>
-        <div class="shot"><img src="img/hatdua.jpg?v=3" alt="Hộp quà Trung thu Đoàn Viên" loading="lazy" decoding="async" width="900" height="675"></div>
+        <div class="shot await"><span>Đang chờ ảnh sản phẩm<em>Hộp quà là bao bì riêng của Hiển Hòa nên cần ảnh thật</em></span></div>
         <div class="body">
           <h3>Hộp Đoàn Viên · 3 loại hạt</h3>
           <p class="spec">500g · hạt dưa, hạt bí, hướng dương</p>
@@ -381,7 +393,7 @@
       </article>
 
       <article class="p">
-        <div class="shot"><img src="img/hatdua-b.jpg?v=3" alt="Hộp quà Trung thu Trăng Vàng cao cấp" loading="lazy" decoding="async" width="900" height="675"></div>
+        <div class="shot await"><span>Đang chờ ảnh sản phẩm<em>Hộp quà là bao bì riêng của Hiển Hòa nên cần ảnh thật</em></span></div>
         <div class="body">
           <h3>Hộp Trăng Vàng · cao cấp</h3>
           <p class="spec">800g · hạt chọn tay, hộp gỗ</p>
@@ -393,7 +405,7 @@
 
       <article class="p">
         <span class="badge">Từ 50 hộp</span>
-        <div class="shot"><img src="img/hatbi.jpg?v=3" alt="Hộp quà in logo doanh nghiệp" loading="lazy" decoding="async" width="900" height="675"></div>
+        <div class="shot await"><span>Đang chờ ảnh sản phẩm<em>Hộp quà là bao bì riêng của Hiển Hòa nên cần ảnh thật</em></span></div>
         <div class="body">
           <h3>Hộp in logo doanh nghiệp</h3>
           <p class="spec">Thiết kế riêng · khắc/in logo</p>
@@ -491,11 +503,7 @@
 
       <article class="p">
         <span class="badge g">Sắp có</span>
-        <div class="shot" style="display:grid;place-items:center;background:var(--cream2)">
-          <span style="color:var(--muted);font-size:13px;padding:20px;text-align:center">
-            Đang chờ ảnh sản phẩm
-          </span>
-        </div>
+        <div class="shot await"><span>Đang chờ ảnh sản phẩm<em>Chưa có ảnh hũ whey không nhãn hiệu</em></span></div>
         <div class="body">
           <h3>Whey Protein</h3>
           <p class="spec">Hũ 900g · vị socola / vani</p>
