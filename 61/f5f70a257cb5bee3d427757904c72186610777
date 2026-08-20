@@ -1,0 +1,22 @@
+index.html
+  s_b6590482fc13dc::t_efe110d8b85b46 246,307,320,332,344,373,384,396,440-514
+  s_b6590482fc13dc::t_9a8046132da799 515-517
+img/ATTRIBUTION.md
+  s_b6590482fc13dc::t_721704ade7a30e 3-4,6,8-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "61f5f70a257cb5bee3d427757904c72186610777",
+  "prompts": {},
+  "sessions": {
+    "s_b6590482fc13dc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4bccff0-af0d-41ee-a6d3-0a19575667ad",
+        "model": "claude-opus-5"
+      },
+      "human_author": "anh nguyen <anh.nqqq@icloud.com>"
+    }
+  }
+}
