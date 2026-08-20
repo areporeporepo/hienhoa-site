@@ -19,6 +19,9 @@ const BASE = process.env.BASE || 'http://hienhoa.com';
 // correct image is a real photograph of it.
 const RULES = [
   { match: /hạt dưa/i,        allow: /hatdua/,       label: 'seed photo' },
+  // "xanh" means green, i.e. the shelled kernel. Our photo is the whole
+  // in-shell seed, so the label must not claim green.
+  { match: /hạt bí xanh/i,    allow: /__never__/,    label: 'green shelled kernel photo (we do not have one)' },
   { match: /hạt bí/i,         allow: /hatbi/,        label: 'pumpkin seed photo' },
   { match: /^hộp/i,           allow: null,           label: 'own photograph only' },
   { match: /d3|k2/i,          allow: /d3k2/,         label: 'softgel photo' },
