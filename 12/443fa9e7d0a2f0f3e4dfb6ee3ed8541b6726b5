@@ -1,0 +1,14 @@
+index.html
+  h_ed8409725be97e 139-145,377-381,385,396,408,506
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "12443fa9e7d0a2f0f3e4dfb6ee3ed8541b6726b5",
+  "prompts": {},
+  "humans": {
+    "h_ed8409725be97e": {
+      "author": "anh nguyen <anh.nqqq@icloud.com>"
+    }
+  }
+}
