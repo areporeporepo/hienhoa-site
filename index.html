@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b8860b">
+<title>Hiền Hòa · Hạt dưa &amp; quà tặng · Ưu đãi Quốc khánh 2/9 và Trung thu 2026</title>
+<meta name="description" content="Hạt dưa loại 1, hạt bí, quà tặng Trung thu. Giá bán buôn tận xưởng. Ưu đãi 81 năm Quốc khánh 2/9 và đặt trước Trung thu 25/9/2026. Miễn phí giao hàng đơn từ 2 triệu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Warm gold and cream with red accents, following the Vietnamese festive
+     retail convention: gold carries the page, red is reserved for price and
+     urgency so discounts stay legible instead of drowning in colour. */
+  :root {
+    --cream:  #fffaf0;
+    --cream2: #fdf3e0;
+    --gold:   #b8860b;
+    --gold-l: #e8b52b;
+    --gold-d: #8a6508;
+    --red:    #c8102e;
+    --ink:    #241b10;
+    --muted:  #7f7361;
+    --line:   #ecdfc6;
+    --f: 'Be Vietnam Pro', -apple-system, system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--ink);
+         font-family: var(--f); font-size: 15.5px; line-height: 1.6;
+         -webkit-font-smoothing: antialiased; }
+  h1,h2,h3,h4 { margin: 0; font-weight: 800; line-height: 1.12;
+                letter-spacing: -.018em; }
+  a { color: inherit; text-decoration: none; }
+  img, svg { display: block; max-width: 100%; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- utility bar ---------- */
+  .util { background: var(--gold-d); color: #fff5dc; font-size: 13px; }
+  .util .wrap { display: flex; flex-wrap: wrap; gap: 6px 22px;
+                justify-content: center; padding: 9px 20px; text-align: center; }
+  .util b { color: #fff; }
+
+  /* ---------- nav ---------- */
+  nav { position: sticky; top: 0; z-index: 60; background: var(--cream);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 1px 0 rgba(36,27,16,.03); }
+  nav .bar { display: flex; align-items: center; gap: 16px; height: 68px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 800;
+          font-size: 21px; letter-spacing: -.03em; white-space: nowrap; }
+  .logo .mark {
+    width: 34px; height: 34px; border-radius: 10px; flex: none;
+    background: linear-gradient(140deg, var(--gold-l), var(--gold));
+    display: grid; place-items: center; color: #fff; font-size: 16px;
+  }
+  .logo small { display: block; font-size: 10.5px; font-weight: 500;
+                letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+  .cats { display: flex; gap: 4px; margin-left: 18px; overflow-x: auto;
+          scrollbar-width: none; }
+  .cats::-webkit-scrollbar { display: none; }
+  .cats a { padding: 8px 13px; border-radius: 100px; font-size: 14px;
+            font-weight: 600; color: #4a4032; white-space: nowrap;
+            transition: background .18s, color .18s; }
+  .cats a:hover, .cats a.on { background: var(--cream2); color: var(--gold-d); }
+  nav .right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+  .hot { font-size: 13px; line-height: 1.25; text-align: right; }
+  .hot b { display: block; font-size: 15px; color: var(--red); }
+
+  .btn { display: inline-block; font-family: var(--f); font-weight: 700;
+         font-size: 14.5px; padding: 12px 22px; border-radius: 100px;
+         border: 0; cursor: pointer; white-space: nowrap;
+         background: var(--red); color: #fff;
+         transition: transform .2s cubic-bezier(.2,.7,.2,1), filter .2s; }
+  .btn:hover { transform: translateY(-2px); filter: brightness(1.07); }
+  .btn.gold { background: linear-gradient(140deg, var(--gold-l), var(--gold));
+              color: #2a1d02; }
+  .btn.line { background: transparent; border: 1.5px solid currentColor; }
+  .btn.sm { padding: 9px 17px; font-size: 13.5px; }
+
+  /* ---------- hero: two campaigns side by side ---------- */
+  .hero { padding: 30px 0 8px; }
+  .promos { display: grid; gap: 16px; grid-template-columns: 1.32fr 1fr; }
+  .promo { position: relative; overflow: hidden; border-radius: 22px;
+           padding: 40px 36px; color: #fff; min-height: 328px;
+           display: flex; flex-direction: column; justify-content: flex-end; }
+  .promo.qk { background: linear-gradient(150deg, #d4142b, #8e0b1c); }
+  .promo.tt { background: linear-gradient(150deg, #c8901f, #7a4f06); }
+  /* radiating rays for National Day, lantern glow for Mid-Autumn */
+  .promo.qk::before {
+    content: ''; position: absolute; inset: -50%;
+    background: repeating-conic-gradient(from 0deg at 50% 100%,
+      rgba(255,255,255,.08) 0deg 5deg, transparent 5deg 13deg);
+  }
+  .promo.tt::before {
+    content: ''; position: absolute; right: -14%; top: -22%;
+    width: 62%; aspect-ratio: 1; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,240,190,.5), transparent 66%);
+  }
+  .promo > * { position: relative; z-index: 2; }
+  .pill { display: inline-flex; align-items: center; gap: 7px; align-self: flex-start;
+          background: rgba(0,0,0,.26); border: 1px solid rgba(255,255,255,.3);
+          padding: 6px 14px; border-radius: 100px; font-size: 12.5px;
+          font-weight: 700; letter-spacing: .04em; margin-bottom: auto; }
+  .promo h1 { font-size: clamp(28px, 3.5vw, 42px); max-width: 15ch; margin-top: 22px; }
+  .promo h2 { font-size: clamp(24px, 3vw, 34px); max-width: 15ch; margin-top: 22px; }
+  .promo p { margin: 12px 0 0; font-size: 15px; color: rgba(255,255,255,.9);
+             max-width: 34ch; }
+  .promo .row { display: flex; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
+  .cd { display: flex; gap: 7px; margin-top: 18px; }
+  .cd div { background: rgba(0,0,0,.3); border: 1px solid rgba(255,255,255,.22);
+            border-radius: 11px; padding: 7px 12px; text-align: center; min-width: 58px; }
+  .cd b { display: block; font-size: 21px; font-variant-numeric: tabular-nums;
+          line-height: 1.15; }
+  .cd span { font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+             color: rgba(255,255,255,.7); }
+
+  /* ---------- sections ---------- */
+  section { padding: 56px 0; }
+  .head { display: flex; align-items: flex-end; justify-content: space-between;
+          gap: 20px; flex-wrap: wrap; margin-bottom: 26px; }
+  .kick { color: var(--gold-d); font-weight: 700; font-size: 12.5px;
+          letter-spacing: .14em; text-transform: uppercase; margin-bottom: 8px; }
+  h2.t { font-size: clamp(25px, 3.4vw, 36px); }
+  .sub { color: var(--muted); max-width: 60ch; margin-top: 10px; }
+
+  /* ---------- product cards ---------- */
+  .grid { display: grid; gap: 16px;
+          grid-template-columns: repeat(auto-fill, minmax(238px, 1fr)); }
+  .p {
+    background: #fff; border: 1px solid var(--line); border-radius: 18px;
+    overflow: hidden; position: relative; display: flex; flex-direction: column;
+    transition: transform .22s cubic-bezier(.2,.7,.2,1), box-shadow .22s;
+  }
+  .p:hover { transform: translateY(-5px);
+             box-shadow: 0 18px 42px rgba(138,101,8,.13); }
+  .p .shot { aspect-ratio: 4/3; background: var(--cream2);
+             display: grid; place-items: center; border-bottom: 1px solid var(--line); }
+  .badge { position: absolute; top: 12px; left: 12px; background: var(--red);
+           color: #fff; font-size: 12px; font-weight: 800; padding: 5px 10px;
+           border-radius: 8px; z-index: 3; }
+  .badge.g { background: var(--gold); color: #2a1d02; left: auto; right: 12px; }
+  .p .body { padding: 16px 17px 18px; display: flex; flex-direction: column; flex: 1; }
+  .p h3 { font-size: 16.5px; }
+  .p .spec { color: var(--muted); font-size: 13px; margin-top: 5px; }
+  .p .pr { margin-top: 14px; display: flex; align-items: baseline;
+           gap: 8px; flex-wrap: wrap; }
+  .p .now { font-size: 22px; font-weight: 800; color: var(--red); }
+  .p .now small { font-size: 13px; font-weight: 500; color: var(--muted); }
+  .p .old { font-size: 13.5px; color: var(--muted); text-decoration: line-through; }
+  .p .btn { margin-top: 15px; align-self: stretch; text-align: center; }
+
+  /* ---------- bulk pricing ---------- */
+  .band { background: #fff; border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line); }
+  .tbl { margin-top: 22px; overflow-x: auto; border: 1px solid var(--line);
+         border-radius: 18px; }
+  table { width: 100%; border-collapse: collapse; min-width: 640px; background: #fff; }
+  th, td { padding: 15px 20px; text-align: left; font-size: 14.5px; }
+  thead th { background: var(--cream2); font-weight: 700; font-size: 13.5px;
+             border-bottom: 1px solid var(--line); }
+  tbody tr + tr td { border-top: 1px solid var(--line); }
+  tbody tr:hover { background: #fffdf7; }
+  td.n { font-variant-numeric: tabular-nums; font-weight: 700; }
+  td.s { color: var(--red); font-weight: 800; }
+
+  /* ---------- ai line ---------- */
+  .ai { background: var(--ink); color: #fdf6e6; }
+  .ai h2.t, .ai h3 { color: #fff; }
+  .ai .kick { color: var(--gold-l); }
+  .ai .sub { color: rgba(253,246,230,.66); }
+  .ai .c { background: rgba(253,246,230,.055); border: 1px solid rgba(253,246,230,.15);
+           border-radius: 16px; padding: 22px; }
+
+  /* ---------- corporate ---------- */
+  .corp { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+          margin-top: 24px; }
+  .corp .c { background: #fff; border: 1px solid var(--line);
+             border-radius: 16px; padding: 22px; }
+  .corp .c b { display: block; font-size: 26px; color: var(--gold-d); }
+  .note { background: #fffdf3; border: 1px solid var(--line);
+          border-left: 4px solid var(--gold-l); border-radius: 12px;
+          padding: 15px 18px; margin-top: 24px; font-size: 14px; }
+
+  footer { background: var(--cream2); border-top: 1px solid var(--line);
+           padding: 30px 0; font-size: 13.5px; color: var(--muted); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px;
+                 justify-content: space-between; }
+
+  @media (max-width: 900px) { .promos { grid-template-columns: 1fr; }
+                              .promo { min-height: 268px; padding: 30px 26px; } }
+  @media (max-width: 720px) { .cats, .hot { display: none; } section { padding: 42px 0; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span><b>Miễn phí giao hàng</b> đơn từ 2.000.000đ</span>
+    <span><b>Mẫu thử 200g</b> miễn phí cho khách bán buôn</span>
+    <span>Đặt trước <b>26/8</b> để nhận hàng trước kỳ nghỉ lễ</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap bar">
+    <a class="logo" href="#">
+      <span class="mark">★</span>
+      <span>Hiền Hòa<small>Nông sản &amp; Giải pháp AI</small></span>
+    </a>
+    <div class="cats">
+      <a class="on" href="#hatdua">Hạt dưa</a>
+      <a href="#trungthu">Quà Trung thu</a>
+      <a href="#giasi">Giá bán buôn</a>
+      <a href="#ai">Giải pháp AI</a>
+      <a href="#lienhe">Liên hệ</a>
+    </div>
+    <div class="right">
+      <div class="hot">Hotline đặt hàng (Zalo)<b>Đang cập nhật</b></div>
+      <a class="btn" href="#lienhe">Báo giá</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="wrap promos">
+
+    <div class="promo qk">
+      <span class="pill">★ 2/9/1945 &ndash; 2/9/2026 · 81 năm Quốc khánh</span>
+      <h1>Giảm đến 18% mừng Quốc khánh</h1>
+      <p>Áp dụng cho hạt dưa loại 1, đơn từ 100kg. Đặt trước 28/8/2026.</p>
+      <div class="cd" id="cd1">
+        <div><b id="d1">–</b><span>Ngày</span></div>
+        <div><b id="h1">–</b><span>Giờ</span></div>
+        <div><b id="m1">–</b><span>Phút</span></div>
+      </div>
+      <div class="row">
+        <a class="btn gold" href="#giasi">Xem bảng giá</a>
+        <a class="btn line" href="#hatdua">Chọn hàng</a>
+      </div>
+    </div>
+
+    <div class="promo tt">
+      <span class="pill">🏮 Rằm tháng 8 · Thứ Sáu 25/9/2026</span>
+      <h2>Đặt trước quà Trung thu</h2>
+      <p>Hộp quà hạt dưa &ndash; hạt bí &ndash; hạt hướng dương. Khắc logo doanh nghiệp.</p>
+      <div class="cd" id="cd2">
+        <div><b id="d2">–</b><span>Ngày</span></div>
+        <div><b id="h2">–</b><span>Giờ</span></div>
+        <div><b id="m2">–</b><span>Phút</span></div>
+      </div>
+      <div class="row"><a class="btn gold" href="#trungthu">Xem hộp quà</a></div>
+    </div>
+
+  </div>
+</div>
+
+<section id="hatdua">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="kick">Bán chạy nhất</div>
+        <h2 class="t">Hạt dưa rang mộc, không phẩm màu</h2>
+        <p class="sub">Phân loại theo cỡ hạt và tỷ lệ hạt lép. Đóng gói từ 500g đến bao 25kg.</p>
+      </div>
+      <a class="btn line sm" style="color:var(--gold-d)" href="#giasi">Bảng giá bán buôn →</a>
+    </div>
+
+    <div class="grid">
+      <!-- Seed motif drawn inline: honest placeholder that looks intentional
+           until real product photography is shot. -->
+      <article class="p">
+        <span class="badge">-18%</span>
+        <div class="shot"><svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true">
+          <g fill="#c8102e" opacity=".9">
+            <ellipse cx="38" cy="42" rx="13" ry="20" transform="rotate(-22 38 42)"/>
+            <ellipse cx="70" cy="52" rx="13" ry="20" transform="rotate(14 70 52)"/>
+            <ellipse cx="52" cy="76" rx="13" ry="20" transform="rotate(-6 52 76)"/>
+          </g></svg></div>
+        <div class="body">
+          <h3>Hạt dưa đỏ loại 1</h3>
+          <p class="spec">Cỡ 11&ndash;12mm · hạt lép &lt;2%</p>
+          <div class="pr"><span class="now">92.000<small>đ/kg</small></span>
+            <span class="old">112.000đ</span></div>
+          <a class="btn sm" href="#lienhe">Đặt hàng</a>
+        </div>
+      </article>
+
+      <article class="p">
+        <span class="badge">-15%</span>
+        <span class="badge g">Quà biếu</span>
+        <div class="shot"><svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true">
+          <g fill="#8e0b1c" opacity=".85">
+            <ellipse cx="42" cy="40" rx="15" ry="22" transform="rotate(-18 42 40)"/>
+            <ellipse cx="70" cy="62" rx="15" ry="22" transform="rotate(20 70 62)"/>
+          </g></svg></div>
+        <div class="body">
+          <h3>Hạt dưa cao cấp</h3>
+          <p class="spec">Cỡ 12mm+ · hạt lép &lt;1% · chọn tay</p>
+          <div class="pr"><span class="now">128.000<small>đ/kg</small></span>
+            <span class="old">150.000đ</span></div>
+          <a class="btn sm" href="#lienhe">Đặt hàng</a>
+        </div>
+      </article>
+
+      <article class="p">
+        <span class="badge">-16%</span>
+        <div class="shot"><svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true">
+          <g fill="#b8860b" opacity=".8">
+            <ellipse cx="36" cy="46" rx="11" ry="17" transform="rotate(-26 36 46)"/>
+            <ellipse cx="60" cy="38" rx="11" ry="17" transform="rotate(8 60 38)"/>
+            <ellipse cx="74" cy="62" rx="11" ry="17" transform="rotate(24 74 62)"/>
+            <ellipse cx="48" cy="72" rx="11" ry="17" transform="rotate(-10 48 72)"/>
+          </g></svg></div>
+        <div class="body">
+          <h3>Hạt dưa loại 2</h3>
+          <p class="spec">Cỡ 10&ndash;11mm · hạt lép &lt;4% · bao 25kg</p>
+          <div class="pr"><span class="now">74.000<small>đ/kg</small></span>
+            <span class="old">88.000đ</span></div>
+          <a class="btn sm" href="#lienhe">Đặt hàng</a>
+        </div>
+      </article>
+
+      <article class="p">
+        <span class="badge g">Mới</span>
+        <div class="shot"><svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true">
+          <g fill="#5f7a2a" opacity=".8">
+            <ellipse cx="44" cy="44" rx="12" ry="19" transform="rotate(-16 44 44)"/>
+            <ellipse cx="66" cy="66" rx="12" ry="19" transform="rotate(18 66 66)"/>
+          </g></svg></div>
+        <div class="body">
+          <h3>Hạt bí xanh</h3>
+          <p class="spec">Rang mộc · bao 20kg</p>
+          <div class="pr"><span class="now">118.000<small>đ/kg</small></span></div>
+          <a class="btn sm" href="#lienhe">Đặt hàng</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="trungthu" class="band">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="kick">🏮 Trung thu 2026 · Rằm tháng 8, thứ Sáu 25/9</div>
+        <h2 class="t">Hộp quà Trung thu cho doanh nghiệp</h2>
+        <p class="sub">
+          Đặt trước để kịp in ấn và khắc logo. Đơn doanh nghiệp từ 50 hộp
+          được thiết kế riêng, miễn phí mẫu duyệt.
+        </p>
+      </div>
+      <a class="btn sm" href="#lienhe">Nhận catalogue</a>
+    </div>
+
+    <div class="grid">
+      <article class="p">
+        <span class="badge g">Bán chạy</span>
+        <div class="shot"><svg width="122" height="112" viewBox="0 0 122 112" aria-hidden="true">
+          <rect x="18" y="34" width="86" height="54" rx="9" fill="#c8901f"/>
+          <rect x="18" y="34" width="86" height="13" rx="6" fill="#8a6508"/>
+          <circle cx="61" cy="24" r="12" fill="#e8b52b"/>
+        </svg></div>
+        <div class="body">
+          <h3>Hộp Đoàn Viên · 3 loại hạt</h3>
+          <p class="spec">500g · hạt dưa, hạt bí, hướng dương</p>
+          <div class="pr"><span class="now">185.000<small>đ/hộp</small></span>
+            <span class="old">215.000đ</span></div>
+          <a class="btn sm" href="#lienhe">Đặt trước</a>
+        </div>
+      </article>
+
+      <article class="p">
+        <div class="shot"><svg width="122" height="112" viewBox="0 0 122 112" aria-hidden="true">
+          <rect x="14" y="30" width="94" height="62" rx="10" fill="#8e0b1c"/>
+          <rect x="14" y="30" width="94" height="15" rx="7" fill="#5d0512"/>
+          <circle cx="61" cy="20" r="11" fill="#e8b52b"/>
+        </svg></div>
+        <div class="body">
+          <h3>Hộp Trăng Vàng · cao cấp</h3>
+          <p class="spec">800g · hạt chọn tay, hộp gỗ</p>
+          <div class="pr"><span class="now">395.000<small>đ/hộp</small></span>
+            <span class="old">450.000đ</span></div>
+          <a class="btn sm" href="#lienhe">Đặt trước</a>
+        </div>
+      </article>
+
+      <article class="p">
+        <span class="badge">Từ 50 hộp</span>
+        <div class="shot"><svg width="122" height="112" viewBox="0 0 122 112" aria-hidden="true">
+          <rect x="10" y="42" width="48" height="46" rx="8" fill="#b8860b"/>
+          <rect x="64" y="42" width="48" height="46" rx="8" fill="#c8901f"/>
+          <circle cx="61" cy="28" r="12" fill="#e8b52b"/>
+        </svg></div>
+        <div class="body">
+          <h3>Hộp in logo doanh nghiệp</h3>
+          <p class="spec">Thiết kế riêng · khắc/in logo</p>
+          <div class="pr"><span class="now">Báo giá riêng</span></div>
+          <a class="btn sm" href="#lienhe">Liên hệ</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="giasi">
+  <div class="wrap">
+    <div class="kick">Giá bán buôn</div>
+    <h2 class="t">Càng nhiều càng rẻ, minh bạch theo bậc</h2>
+    <p class="sub">Áp dụng cho hạt dưa đỏ loại 1. Ưu đãi Quốc khánh cho đơn đặt trước 28/8/2026. Giá chưa gồm VAT.</p>
+
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Số lượng</th><th>Giá thường</th><th>Giá Quốc khánh</th><th>Tiết kiệm</th><th>Vận chuyển</th></tr></thead>
+        <tbody>
+          <tr><td>10 &ndash; 49 kg</td><td class="n">112.000đ/kg</td><td class="n">104.000đ/kg</td><td class="s">7%</td><td>Theo cước</td></tr>
+          <tr><td>50 &ndash; 99 kg</td><td class="n">112.000đ/kg</td><td class="n">98.000đ/kg</td><td class="s">12%</td><td>Miễn phí</td></tr>
+          <tr><td>100 &ndash; 299 kg</td><td class="n">112.000đ/kg</td><td class="n">92.000đ/kg</td><td class="s">18%</td><td>Miễn phí</td></tr>
+          <tr><td>Từ 300 kg</td><td class="n">112.000đ/kg</td><td class="n">Báo giá riêng</td><td class="s">18%+</td><td>Miễn phí</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="corp">
+      <div class="c"><b>≤2%</b>Tỷ lệ hạt lép, kiểm tại kho trước khi xuất</div>
+      <div class="c"><b>48h</b>Giao nội thành, 3&ndash;5 ngày toàn quốc</div>
+      <div class="c"><b>200g</b>Mẫu thử miễn phí, không ràng buộc</div>
+      <div class="c"><b>7 ngày</b>Báo giá cố định kể từ ngày báo</div>
+    </div>
+
+    <div class="note">
+      <b>Lưu ý:</b> giá trên là giá tham chiếu bán buôn. Giá cuối phụ thuộc
+      sản lượng và thời điểm thu mua. Liên hệ để nhận báo giá chính thức.
+    </div>
+  </div>
+</section>
+
+<section class="ai" id="ai">
+  <div class="wrap">
+    <div class="kick">Giải pháp AI &amp; Phần mềm</div>
+    <h2 class="t">Trợ lý giọng nói AI, nói tiếng Việt, Trung và Anh</h2>
+    <p class="sub">
+      Khách gọi đến, AI trả lời ngay bằng đúng ngôn ngữ họ dùng, tra dữ liệu
+      thật rồi đọc kết quả. Hội thoại liên tục, ngắt lời được như nói với người.
+      Không cần tải ứng dụng.
+    </p>
+
+    <div class="grid" style="margin-top:24px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+      <div class="c">
+        <h3 style="font-size:17px">Tổng đài AI 24/7</h3>
+        <p class="sub" style="margin:8px 0 0">Trả lời về giá, tồn kho, đơn hàng. Chuyển người thật khi cần.</p>
+      </div>
+      <div class="c">
+        <h3 style="font-size:17px">Tra cứu dữ liệu bằng giọng nói</h3>
+        <p class="sub" style="margin:8px 0 0">Nối vào cơ sở dữ liệu của bạn. AI phải tra mới được trả lời, không tự bịa số.</p>
+      </div>
+      <div class="c">
+        <h3 style="font-size:17px">Ba ngôn ngữ, một hệ thống</h3>
+        <p class="sub" style="margin:8px 0 0">Tự nhận ngôn ngữ người gọi và đổi theo giữa cuộc trò chuyện.</p>
+      </div>
+    </div>
+
+    <div class="row" style="display:flex;gap:10px;margin-top:26px;flex-wrap:wrap">
+      <a class="btn gold" href="https://voice.hienhoa.com" target="_blank" rel="noopener">Dùng thử demo trực tiếp →</a>
+      <a class="btn line" style="color:#fdf6e6" href="mailto:admin@hienhoa.com?subject=T%C6%B0%20v%E1%BA%A5n%20gi%E1%BA%A3i%20ph%C3%A1p%20AI">Tư vấn triển khai</a>
+    </div>
+    <p class="sub" style="margin-top:14px;font-size:13px;color:rgba(253,246,230,.45)">
+      Bản demo tra cứu dữ liệu công khai của Uỷ ban Chứng khoán Hoa Kỳ (SEC),
+      hơn 32.000 hồ sơ. Cần mật khẩu truy cập.
+    </p>
+  </div>
+</section>
+
+<section id="lienhe" class="band">
+  <div class="wrap">
+    <div class="kick">Liên hệ</div>
+    <h2 class="t">Nhận báo giá trong ngày</h2>
+    <p class="sub">Gửi loại hàng và số lượng, chúng tôi báo giá kèm cước vận chuyển trong 4 giờ làm việc.</p>
+
+    <div class="corp">
+      <div class="c"><b style="font-size:19px">admin@hienhoa.com</b>Email đặt hàng &amp; báo giá</div>
+      <div class="c"><b style="font-size:19px">Đang cập nhật</b>Hotline / Zalo</div>
+      <div class="c"><b style="font-size:19px">Đang cập nhật</b>Địa chỉ kho</div>
+    </div>
+
+    <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap">
+      <a class="btn" href="mailto:admin@hienhoa.com?subject=Y%C3%AAu%20c%E1%BA%A7u%20b%C3%A1o%20gi%C3%A1&body=Lo%E1%BA%A1i%20h%C3%A0ng%3A%20%0AS%E1%BB%91%20l%C6%B0%E1%BB%A3ng%3A%20%0A%C4%90%E1%BB%8Ba%20ch%E1%BB%89%20giao%3A%20%0AT%C3%AAn%20%2F%20SDT%3A%20">Gửi yêu cầu báo giá</a>
+    </div>
+
+    <div class="note">
+      <b>Lịch nghỉ lễ Quốc khánh 2026:</b> nghỉ 5 ngày liên tục từ thứ Bảy 29/8
+      đến hết thứ Tư 2/9. Ngày làm việc 31/8 hoán đổi sang thứ Bảy 22/8.
+      Đơn cần nhận trước lễ vui lòng đặt trước <b>26/8</b>.
+      Đơn Trung thu nên đặt trước <b>10/9</b> để kịp in ấn.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Hiền Hòa · Nông sản &amp; Giải pháp AI</div>
+    <div>★ Chúc mừng 81 năm Quốc khánh · 🏮 Trung thu an lành</div>
+  </div>
+</footer>
+
+<script>
+// Both countdowns run in Indochina Time so they read correctly for a customer
+// in Vietnam no matter where the visitor's device is set.
+const T1 = new Date('2026-08-28T23:59:59+07:00').getTime();  // Quốc khánh order cut-off
+const T2 = new Date('2026-09-25T00:00:00+07:00').getTime();  // Trung thu, rằm tháng 8
+const pad = n => String(n).padStart(2, '0');
+
+function paint(target, ids, boxId, doneMsg) {
+  const diff = target - Date.now();
+  if (diff <= 0) {
+    const box = document.getElementById(boxId);
+    if (box) box.innerHTML = '<div style="min-width:auto;padding:8px 14px">' + doneMsg + '</div>';
+    return false;
+  }
+  const s = Math.floor(diff / 1000);
+  document.getElementById(ids[0]).textContent = Math.floor(s / 86400);
+  document.getElementById(ids[1]).textContent = pad(Math.floor(s % 86400 / 3600));
+  document.getElementById(ids[2]).textContent = pad(Math.floor(s % 3600 / 60));
+  return true;
+}
+
+function tick() {
+  paint(T1, ['d1','h1','m1'], 'cd1', 'Đã hết ưu đãi Quốc khánh');
+  paint(T2, ['d2','h2','m2'], 'cd2', 'Chúc Trung thu an lành');
+}
+tick();
+setInterval(tick, 1000);
+</script>
+</body>
+</html>
