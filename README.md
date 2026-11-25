@@ -1,29 +1,9 @@
 # hienhoa.com
 
-Landing site for Hiển Hòa: agricultural products (hạt dưa / watermelon seeds,
-hạt bí) and AI software solutions.
+Hiển Hòa’s public catalog, holiday planning calendar and customer support site. GitHub Pages serves the repository directly at the domain in `CNAME`.
 
-Two live campaigns:
+The home page links to the online ordering app. Customers request quantities and the merchant issues a quote with a current total, delivery terms and expiry. The ChatGPT product page at `/chatgpt/` carries directory availability, with order support at `/chatgpt/support/`. Update the status and add the official installation link after public directory approval.
 
-- **Quốc khánh 2/9** — 81st National Day. Holiday runs 5 days, 29/8 to 2/9/2026
-  (the 31/8 workday is swapped to Sat 22/8). Order cut-off 28/8.
-- **Trung thu** — rằm tháng 8, **Friday 25/9/2026**. Corporate gift boxes,
-  order by 10/9 to allow for printing and logo work.
+The recipient for orders and quotes is `admin@hienhoa.com`. Maintain the hotline and Zalo number through `CONTACT` in `index.html`. The AI section links to the trilingual demo at https://voice.hienhoa.com.
 
-Both countdowns run in Indochina Time so they read correctly for a customer in
-Vietnam regardless of the visitor's device timezone.
-
-Static site, no build step. Deployed via GitHub Pages to the apex domain.
-
-## To fill in before launch
-
-- Zalo / hotline number (currently "Đang cập nhật" in the nav, contact block)
-- Warehouse address
-- Real product photography (the seed and gift-box shapes are inline SVG
-  placeholders, deliberately drawn rather than stock photos)
-- Prices are reference wholesale figures and need confirming against actual
-  cost. Shopee has no public price API and blocks scraping, so competitor
-  pricing has to be gathered manually.
-
-The AI section links to https://voice.hienhoa.com, the live trilingual voice
-agent demo.
+Catalog photographs and their sources are documented in [the image credits](img/ATTRIBUTION.md). Gift-box photography can be added when genuine product photos are available. Published promotions should have merchant-confirmed terms and dates.
