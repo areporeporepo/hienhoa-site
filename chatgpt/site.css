@@ -10,3 +10,5 @@ p{max-width:64ch;margin:.7rem 0}section{max-width:53rem;margin-top:2.1rem;border
 .lead{font-size:1.17rem}.actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:1.3rem}.button{background:var(--accent);color:white;font-weight:700;text-decoration:none;padding:.65rem 1.15rem;border-radius:2rem}
 ol{padding-left:1.35rem;max-width:64ch}li+li{margin-top:.45rem}footer{border-top:1px solid var(--line);font-size:.94rem}
 @media(max-width:40rem){header .wrap{align-items:flex-start}header nav{font-size:.9rem}main{padding-bottom:2rem}}
+
+.titlelink{color:inherit;text-decoration:none}.titlelink:hover,.titlelink:focus-visible{text-decoration:underline;text-decoration-thickness:.07em}
