@@ -27,7 +27,7 @@ const RULES = [
   { match: /d3|k2/i,          allow: /d3k2/,         label: 'softgel photo' },
   { match: /omega|dầu cá/i,   allow: /omega3/,       label: 'fish oil photo' },
   { match: /vitamin tổng hợp/i, allow: /multivitamin/, label: 'tablet photo' },
-  { match: /whey|protein/i,   allow: null,           label: 'own photograph only' },
+  { match: /whey|protein|đạm từ sữa/i,   allow: null,           label: 'own photograph only' },
 ];
 
 const problems = [];
