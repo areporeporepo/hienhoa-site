@@ -5,6 +5,12 @@
   <title>Hienhoa trên ChatGPT · Đặt hàng và nhận báo giá</title>
   <meta name="description" content="Chọn hạt rang, hộp quà và thực phẩm bổ sung của Hiển Hòa. Tìm hiểu cách gửi yêu cầu, xem báo giá và xác nhận đơn hàng.">
   <link rel="canonical" href="https://hienhoa.com/chatgpt/"><link rel="stylesheet" href="/chatgpt/site.css">
+  <style>
+    .prompt-example{max-width:64ch;margin:1rem 0;padding:.2rem 1rem;background:#fffdf8;border-left:.24rem solid var(--gold);user-select:text}
+    #sao-chep{font:inherit;font-weight:650;color:var(--accent);background:transparent;border:1px solid currentColor;border-radius:1.5rem;padding:.45rem .9rem;cursor:pointer}
+    #sao-chep:focus-visible{outline:3px solid #8a6100;outline-offset:3px}
+    #trang-thai-sao-chep{margin-inline-start:.4rem}
+  </style>
 </head>
 <body>
 <header><div class="wrap"><a class="brand" href="/"><i aria-hidden="true">★</i> Hiển Hòa</a>
@@ -17,6 +23,14 @@
     <p>Bạn có thể xem ảnh, chọn số lượng và gửi yêu cầu đặt hàng ngay. Nút <strong>Gọi Hiển Hòa</strong> mở bảng cuộc gọi và hiển thị tình trạng dịch vụ. Trợ lý giọng nói tại Hoa Kỳ đang chờ kích hoạt. Khi dịch vụ hoạt động, bạn có thể cho phép dùng micrô để hỏi về sản phẩm và chuẩn bị giỏ hàng.</p>
     <p>Hiển Hòa đang chuẩn bị phát hành tiện ích Hienhoa trong danh mục tiện ích ChatGPT tại Hoa Kỳ. Đường dẫn cài đặt sẽ xuất hiện tại đây sau khi tiện ích được duyệt.</p>
   </section>
+  <section id="cau-lenh" aria-labelledby="cau-lenh-title">
+    <h2 id="cau-lenh-title">Câu lệnh cho người đã cài Hienhoa</h2>
+    <p>Trong ChatGPT, chọn tiện ích <strong>Hienhoa</strong>, rồi gửi câu sau:</p>
+    <blockquote class="prompt-example"><p id="noi-dung-cau-lenh">Thêm 0,5 kg hạt dưa đỏ loại 1 vào giỏ và mở giỏ hàng để tôi kiểm tra trước khi gửi yêu cầu báo giá.</p></blockquote>
+    <button type="button" id="sao-chep" hidden>Sao chép câu lệnh</button>
+    <span id="trang-thai-sao-chep" role="status"></span>
+    <p>Kiểm tra giỏ hàng rồi nhấn <strong>Gửi yêu cầu báo giá</strong>. Khi Hiển Hòa gửi báo giá, mở <strong>Đơn của tôi</strong> để xem tổng tiền và điều kiện giao hàng. Nếu đồng ý, nhấn <strong>Chấp nhận báo giá và xác nhận đơn</strong>.</p>
+  </section>
   <section><h2>Cách nhận báo giá và xác nhận đơn</h2>
     <ol>
       <li>Chọn sản phẩm và số lượng, đăng nhập rồi gửi yêu cầu kèm địa chỉ thư điện tử để nhận phản hồi. Lưu lại mã yêu cầu.</li>
@@ -27,4 +41,20 @@
   </section>
 </main>
 <footer><div class="wrap"><span>Hiển Hòa</span><a href="mailto:admin@hienhoa.com">admin@hienhoa.com</a></div></footer>
+<script>
+  const copyButton = document.getElementById('sao-chep');
+  if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+    copyButton.hidden = false;
+    copyButton.addEventListener('click', async () => {
+      const example = document.getElementById('noi-dung-cau-lenh');
+      const status = document.getElementById('trang-thai-sao-chep');
+      try {
+        await navigator.clipboard.writeText(example.textContent);
+        status.textContent = 'Đã sao chép.';
+      } catch {
+        status.textContent = 'Hãy chọn câu lệnh phía trên rồi sao chép.';
+      }
+    });
+  }
+</script>
 </body></html>
